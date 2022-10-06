@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-6xl text-center pt-20 text-indigo-600">
+        Welcome to baper bank
+    </h1>
+
+    <section class=" mt-12 text-white">
+        <div class="grid grid-cols-3 text-center gap-9 pt-7 w-7/12 mx-auto">
+        <div class="p-10 bg-indigo-600">
+            <h4 class="text-2xl">
+                Deposit
+            </h4>
+            <p class="text-lg">
+               ৳ <span id="deposit-taka">00</span>
+            </p>
+        </div>
+        <div class="p-10 bg-cyan-400">
+            <h4 class="text-2xl">
+                Withdrow
+            </h4>
+            <p class="text-lg">
+               ৳ <span id="withdrow-taka">00</span>
+            </p>
+        </div>
+        <div class="p-10 bg-emerald-500">
+            <h4 class="text-2xl">
+                Balance
+            </h4>
+            <p class="text-lg">
+               ৳ <span id="balance-taka">1200</span>
+            </p>
+        </div>
+        </div>
+    </section>
+    <section class=" mt-12 text-white">
+        <div class="grid grid-cols-2 text-center gap-9 pt-7 w-7/12 mx-auto">
+        <div class="p-10 bg-indigo-600">
+            <h4 class="text-2xl">
+                Deposit
+            </h4>
+                <div class="relative mt-1 rounded-md shadow-sm">
+                  <div class="pointer-events-none absolute flex items-center">
+                  </div>
+                  <input type="text" name="price" id="deposit" class="block mx-auto mt-3 rounded-md w-3/4 p-2  pl-7 pr-12 sm:text-sm text-black focus:text-black" placeholder="৳ 0.00">
+                  <button id="deposit-submit" type="submit" class="group relative w4-/12 mt-3 justify-center rounded-md bg-cyan-400 py-3 px-8 text-sm font-medium text-white">
+                    Deposit
+                  </button>
+                </div>
+        </div>
+        <div class="p-10 bg-cyan-400">
+            <h4 class="text-2xl">
+                Withdrow
+            </h4>
+            <div class="relative mt-1 rounded-md shadow-sm">
+                <div class="pointer-events-none absolute flex items-center">
+                </div>
+                <input type="text" name="price" id="withdrow" class="block mx-auto mt-3 rounded-md w-3/4 p-2  pl-7 pr-12 sm:text-sm text-black focus:text-black" placeholder="৳ 0.00">
+              </div>
+              <button id="withdrow-submit" type="submit" class="group relative w4-/12 mt-3 justify-center rounded-md bg-indigo-600 py-3 px-8 text-sm font-medium text-white">
+                Withdrow
+              </button>
+        </div>
+        </div>
+    </section>
+
+
+
+
+<script src="bank.js"></script>
+</body>
+</html>
